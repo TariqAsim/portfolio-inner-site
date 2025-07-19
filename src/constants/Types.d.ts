@@ -9,11 +9,12 @@ declare interface WindowAppProps {
 }
 
 declare type DesktopWindows = {
-    [key in string]: {
+    [key: string]: {
         zIndex: number;
-        component: React.ReactElement;
         minimized: boolean;
         name: string;
         icon: IconName;
+        appKey: string;
+        props?: any;
     };
 };

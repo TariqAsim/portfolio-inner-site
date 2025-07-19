@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from '../showcase/Home';
 import About from '../showcase/About';
 import Window from '../os/Window';
@@ -30,7 +30,6 @@ const ShowcaseExplorer: React.FC<ShowcaseExplorerProps> = (props) => {
             minimizeWindow={props.onMinimize}
             bottomLeftText={'© Copyright 2022 Henry Heffernan'}
         >
-            <Router>
                 <div className="site-page">
                     <VerticalNavbar />
                     <Routes>
@@ -50,7 +49,6 @@ const ShowcaseExplorer: React.FC<ShowcaseExplorerProps> = (props) => {
                         <Route path="/projects/art" element={<ArtProjects />} />
                     </Routes>
                 </div>
-            </Router>
         </Window>
     );
 };

@@ -70,9 +70,7 @@ const APPLICATIONS: {
 
 const Desktop: React.FC<DesktopProps> = (props) => {
     const [windows, setWindows] = useState<DesktopWindows>({});
-
     const [shortcuts, setShortcuts] = useState<DesktopShortcutProps[]>([]);
-
     const [shutdown, setShutdown] = useState(false);
     const [numShutdowns, setNumShutdowns] = useState(1);
 
@@ -80,7 +78,6 @@ const Desktop: React.FC<DesktopProps> = (props) => {
         if (shutdown === true) {
             rebootDesktop();
         }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [shutdown]);
 
     useEffect(() => {
@@ -91,27 +88,16 @@ const Desktop: React.FC<DesktopProps> = (props) => {
                 shortcutName: app.name,
                 icon: app.shortcutIcon,
                 onOpen: () => {
-                    addWindow(
-                        app.key,
-                        <app.component
-                            onInteract={() => onWindowInteract(app.key)}
-                            onMinimize={() => minimizeWindow(app.key)}
-                            onClose={() => removeWindow(app.key)}
-                            key={app.key}
-                        />
-                    );
+                    addWindow(app.key, {});
                 },
             });
         });
-
         newShortcuts.forEach((shortcut) => {
             if (shortcut.shortcutName === 'My Showcase') {
                 shortcut.onOpen();
             }
         });
-
         setShortcuts(newShortcuts);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const rebootDesktop = useCallback(() => {
@@ -119,7 +105,6 @@ const Desktop: React.FC<DesktopProps> = (props) => {
     }, []);
 
     const removeWindow = useCallback((key: string) => {
-        // Absolute hack and a half
         setTimeout(() => {
             setWindows((prevWindows) => {
                 const newWindows = { ...prevWindows };
@@ -185,16 +170,18 @@ const Desktop: React.FC<DesktopProps> = (props) => {
         }, 600);
     }, [numShutdowns]);
 
+    // Refactored addWindow: only store metadata, not JSX
     const addWindow = useCallback(
-        (key: string, element: JSX.Element) => {
+        (key: string, props: any) => {
             setWindows((prevState) => ({
                 ...prevState,
                 [key]: {
                     zIndex: getHighestZIndex() + 1,
                     minimized: false,
-                    component: element,
                     name: APPLICATIONS[key].name,
                     icon: APPLICATIONS[key].shortcutIcon,
+                    appKey: key,
+                    props,
                 },
             }));
         },
@@ -205,22 +192,25 @@ const Desktop: React.FC<DesktopProps> = (props) => {
         <div style={styles.desktop}>
             {/* For each window in windows, loop over and render  */}
             {Object.keys(windows).map((key) => {
-                const element = windows[key].component;
-                if (!element) return <div key={`win-${key}`}></div>;
+                const win = windows[key];
+                if (!win) return <div key={`win-${key}`}></div>;
+                const AppComponent = APPLICATIONS[win.appKey].component;
                 return (
                     <div
                         key={`win-${key}`}
                         style={Object.assign(
                             {},
-                            { zIndex: windows[key].zIndex },
-                            windows[key].minimized && styles.minimized
+                            { zIndex: win.zIndex },
+                            win.minimized && styles.minimized
                         )}
                     >
-                        {React.cloneElement(element, {
-                            key,
-                            onInteract: () => onWindowInteract(key),
-                            onClose: () => removeWindow(key),
-                        })}
+                        <AppComponent
+                            key={key}
+                            onInteract={() => onWindowInteract(key)}
+                            onClose={() => removeWindow(key)}
+                            onMinimize={() => minimizeWindow(key)}
+                            {...(win.props || {})}
+                        />
                     </div>
                 );
             })}
