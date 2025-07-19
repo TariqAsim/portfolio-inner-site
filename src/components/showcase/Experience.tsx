@@ -10,71 +10,52 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
-                        <h1>Hover</h1>
+                        <h1>Taleemabad</h1>
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href={'https://hover.gg/'}
+                            href={'https://taleemabad.com/'}
                         >
-                            <h4>www.hover.gg</h4>
+                            <h4>www.taleemabad.com</h4>
                         </a>
                     </div>
                     <div style={styles.headerRow}>
-                        <h3>Frontend Engineer</h3>
+                        <h3>Frontend Developer</h3>
                         <b>
-                            <p>Summer 2020 - Fall 2021</p>
+                            <p>January 2025 - Present</p>
                         </b>
                     </div>
                 </div>
             </div>
             <div className="text-block">
                 <p>
-                    Targeted towards online content creators and streamers
-                    looking to build a brand, Hover is the home of over 150K
-                    users. Written in Typescript using React, React-Native,
-                    Framer, Express, and Redux.
+                    Contributing to an offline-first EdTech platform, delivering both web and mobile experiences. Built using React, Vite, DexieDB (for offline storage), TypeScript, Material Design components, and Emotion CSS.
                 </p>
                 <br />
                 <ul>
                     <li>
                         <p>
-                            Architected and engineered the vertical scrolling
-                            discover player which, at its daily peak, was
-                            responsible for generating over 600,000 views across
-                            20,000 active users.
+                            Built the web application using React, Vite, DexieDB (for offline storage), TypeScript, Material Design components, Emotion CSS for styling, and Storybook for UI component development.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Designed and implemented multiple features to
-                            increase app usability and user experience while
-                            ensuring the quality, maintainability and
-                            scalability of the front end as the user base grew
-                            by over 50,000.
+                            Implemented data synchronization logic with PostHog analytics to seamlessly handle online/offline transitions, ensuring consistent user experience and data integrity across millions of learning sessions.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Coordinated major refactors targeted towards app
-                            optimization and performance resulting in a smoother
-                            user experience and accomplished by eliminating
-                            redundant re-renders and API calls by over 50%.
+                            Collaborated with backend and mobile teams to design RESTful APIs and define data models.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Directed and executed an internal migration of 3
-                            individual repositories to a single monorepo,
-                            greatly reducing overhead for developing new
-                            features, fixing bugs, and managing dependencies.
+                            Converted the web app into a cross-platform mobile application using Capacitor and Cordova, integrating device features (camera, notifications, file storage) for offline use.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Rebuilt the website with React and shared mobile app
-                            components allowing users to access a wide variety
-                            of app interactions entirely on the web, resulting
-                            in over 700,000 total site visits.
+                            Wrote comprehensive unit and integration tests, and documented UI components in Storybook to accelerate feature development and onboarding.
                         </p>
                     </li>
                 </ul>
@@ -82,55 +63,52 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
-                        <h1>BrACS</h1>
+                        <h1>Vacon.ai</h1>
                         <a
                             target="_blank"
                             rel="noreferrer"
-                            href={'https://bracs.co/'}
+                            href={'https://vacon.ai/'}
                         >
-                            <h4>www.bracs.co</h4>
+                            <h4>www.vacon.ai</h4>
                         </a>
                     </div>
                     <div style={styles.headerRow}>
-                        <h3>Team Lead & Engineer</h3>
+                        <h3>Software Engineer</h3>
                         <b>
-                            <p>Fall 2021 - Spring 2022</p>
+                            <p>May 2023 - December 2024</p>
                         </b>
                     </div>
                 </div>
             </div>
             <div className="text-block">
                 <p>
-                    Supervised and developed the front end of bracs.co, a
-                    beautifully simple and effective bracket creation and
-                    management engine. Written in Typescript using React and
-                    deployed using AWS Elastic Beanstalk.
+                    Led the frontend development of an AI-powered platform that streamlines product development. Utilized Next.js, TypeScript, Firebase, Mixpanel, NextAuth, Axios, and Tailwind CSS.
                 </p>
                 <br />
                 <ul>
                     <li>
                         <p>
-                            Managed the project and team members by conducting
-                            bi-weekly stand-ups.
+                            Developed and maintained the frontend architecture using Next.js and TypeScript, ensuring type safety and optimal performance.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Architected bracket view UI using React Flow and
-                            custom bracket data types built from binary trees.
+                            Integrated Firebase for backend services and user authentication, implementing NextAuth for secure authentication flows.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Created conversion algorithms to serialize bracket
-                            tree data to allow for saving in the cloud.
+                            Utilized Mixpanel for analytics and user behavior tracking to improve product decisions and user experience.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Implemented bracket generation utilities which
-                            employ gray code for proper team seeding and
-                            placement.
+                            Integrated GitHub for seamless workflow and collaborated with a Python FastAPI backend team.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Implemented responsive design using Tailwind CSS and ensured cross-browser compatibility.
                         </p>
                     </li>
                 </ul>
@@ -138,101 +116,143 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
-                        <h1>K-F/X</h1>
+                        <h1>Silicon Solutions</h1>
                         <a
                             target="_blank"
                             rel="noreferrer"
-                            href={'https://kfxnyc.com/'}
+                            href={'https://siliconsols.com/'}
                         >
-                            <h4>www.kfxnyc.com</h4>
+                            <h4>www.siliconsols.com</h4>
                         </a>
                     </div>
                     <div style={styles.headerRow}>
-                        <h3>Special Effects Technician</h3>
+                        <h3>Software Engineer</h3>
                         <b>
-                            <p>Fall 2019, Summer 2021</p>
+                            <p>April 2022 - April 2023</p>
                         </b>
                     </div>
                 </div>
             </div>
             <div className="text-block">
                 <p>
-                    Applied problem solving and technical skills to operate
-                    large equipment such as rain machines, fog machines, small
-                    explosives and general rigging with a professional crew of
-                    50+ people.
+                    Developed and maintained various client websites and web applications, working with diverse technology stacks and client requirements.
                 </p>
                 <br />
-                <h3 style={styles.indent}>Screen Credits:</h3>
                 <ul>
-                    <li style={styles.row}>
-                        <p>• Ray Donovan</p>
+                    <li>
                         <p>
-                            [{' '}
-                            <a
-                                href="https://www.sho.com/ray-donovan"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                SHOWTIME
-                            </a>{' '}
-                            ]
+                            Built responsive web applications using modern frontend technologies including React, JavaScript, and CSS frameworks.
                         </p>
                     </li>
-                    <li style={styles.row}>
-                        <p>• Ray Donovan: The Movie</p>
+                    <li>
                         <p>
-                            [{' '}
-                            <a
-                                href="https://www.sho.com/titles/3508117/ray-donovan-the-movie"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                SHOWTIME
-                            </a>{' '}
-                            ]
+                            Collaborated with clients to understand requirements and deliver custom solutions that met their business needs.
                         </p>
                     </li>
-                    <li style={styles.row}>
-                        <p>• Hightown</p>
+                    <li>
                         <p>
-                            [{' '}
-                            <a
-                                href="https://www.starz.com/us/en/series/hightown/57463"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                STARZ
-                            </a>{' '}
-                            ]
+                            Maintained and optimized existing client websites to improve performance and user experience.
                         </p>
                     </li>
-                    <li style={styles.row}>
-                        <p>• Bull</p>
+                    <li>
                         <p>
-                            [{' '}
-                            <a
-                                href="https://www.cbs.com/shows/bull/"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                CBS
-                            </a>{' '}
-                            ]
+                            Worked with various backend technologies and APIs to create full-stack solutions.
                         </p>
                     </li>
-                    <li style={styles.row}>
-                        <p>• At Home with Amy Sedaris</p>
+                </ul>
+            </div>
+            <div style={styles.headerContainer}>
+                <div style={styles.header}>
+                    <div style={styles.headerRow}>
+                        <h1>Askolay</h1>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href={'https://askolay.pk/'}
+                        >
+                            <h4>www.askolay.pk</h4>
+                        </a>
+                    </div>
+                    <div style={styles.headerRow}>
+                        <h3>Junior Web Developer</h3>
+                        <b>
+                            <p>July 2021 - January 2022</p>
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div className="text-block">
+                <p>
+                    Assisted in the development of web-based educational tools, gaining foundational experience in educational technology and web development.
+                </p>
+                <br />
+                <ul>
+                    <li>
                         <p>
-                            [{' '}
-                            <a
-                                href="https://www.trutv.com/shows/at-home-with-amy-sedaris"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                truTV
-                            </a>{' '}
-                            ]
+                            Contributed to the development of educational web applications using HTML, CSS, and JavaScript.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Assisted in creating interactive learning modules and educational content management systems.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Collaborated with senior developers to learn best practices in web development and educational technology.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Participated in code reviews and testing to ensure quality and functionality of educational tools.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div style={styles.headerContainer}>
+                <div style={styles.header}>
+                    <div style={styles.headerRow}>
+                        <h1>FAST-NUCES</h1>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href={'https://nu.edu.pk/'}
+                        >
+                            <h4>www.nu.edu.pk</h4>
+                        </a>
+                    </div>
+                    <div style={styles.headerRow}>
+                        <h3>Teaching Assistant</h3>
+                        <b>
+                            <p>April 2021 - July 2021</p>
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div className="text-block">
+                <p>
+                    Assisted professors with undergraduate computer science courses, specifically focusing on e-commerce subject with theoretical concepts and web/app-based projects.
+                </p>
+                <br />
+                <ul>
+                    <li>
+                        <p>
+                            Assisted in teaching undergraduate e-commerce courses, helping students with theoretical concepts and web/app-based projects.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Provided guidance on e-commerce principles, digital business models, and web application development for e-commerce platforms.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Graded assignments and provided constructive feedback to help students improve their understanding of e-commerce concepts and web development skills.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Collaborated with professors to develop course materials and improve teaching methodologies for e-commerce education.
                         </p>
                     </li>
                 </ul>
