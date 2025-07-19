@@ -24,10 +24,10 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
             <ResumeDownload />
             <br />
             <div className="text-block">
-                <h2>henryheffernan.com</h2>
+                <h2>tariqasim.com</h2>
                 <br />
                 <p>
-                    henryheffernan.com is my portfolio website, and also the
+                    tariqasim.com is my portfolio website, and also the
                     website you are on right now. This project was an absolute
                     joy to make and challenged me both technically and
                     creatively. Early in 2022, I knew I wanted to make an
@@ -57,7 +57,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     <a
                         rel="noreferrer"
                         target="_blank"
-                        href="https://henryheffernan.vercel.app/"
+                        href="https://tariqasim.vercel.app/"
                     >
                         here
                     </a>{' '}
@@ -73,10 +73,10 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://henryheffernan.com"
+                            href="https://tariqasim.com"
                         >
                             <p>
-                                <b>[3D Site]</b> - henryheffernan.com
+                                <b>[3D Site]</b> - tariqasim.com
                             </p>
                         </a>
                     </li>
@@ -84,10 +84,10 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://henryheffernan.vercel.app/"
+                            href="https://tariqasim.vercel.app/"
                         >
                             <p>
-                                <b>[OS Site]</b> - henryheffernan.vercel.app
+                                <b>[OS Site]</b> - tariqasim.vercel.app
                             </p>
                         </a>
                     </li>
@@ -122,9 +122,9 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     <a
                         rel="noreferrer"
                         target="_blank"
-                        href="https://twitter.com/henryheffernan"
+                        href="https://twitter.com/tariqasim"
                     >
-                        @henryheffernan
+                        @tariqasim
                     </a>
                 </p>
             </div>

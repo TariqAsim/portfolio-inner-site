@@ -12,7 +12,7 @@ const About: React.FC<AboutProps> = (props) => {
         <div className="site-page-content">
             {/* <img src={me} style={styles.topImage} alt="" /> */}
             <h1 style={{ marginLeft: -16 }}>Welcome</h1>
-            <h3>I'm Henry Heffernan</h3>
+            <h3>I'm Tariq Asim</h3>
             <br />
             <div className="text-block">
                 <p>
@@ -27,8 +27,8 @@ const About: React.FC<AboutProps> = (props) => {
                     building it. If you have any questions or comments, feel
                     free to contact me using{' '}
                     <Link to="/contact">this form</Link> or shoot me an email at{' '}
-                    <a href="mailto:henryheffernan@gmail.com">
-                        henryheffernan@gmail.com
+                    <a href="mailto:tariqasim96@gmail.com">
+                        tariqasim96@gmail.com
                     </a>
                 </p>
             </div>
@@ -137,9 +137,9 @@ const About: React.FC<AboutProps> = (props) => {
                     <a
                         rel="noreferrer"
                         target="_blank"
-                        href="https://twitter.com/henryheffernan"
+                        href="https://twitter.com/tariqasim"
                     >
-                        @henryheffernan
+                        @tariqasim
                     </a>{' '}
                     Good luck and have fun!
                 </p>
@@ -149,8 +149,8 @@ const About: React.FC<AboutProps> = (props) => {
                     them. You can reach me through the{' '}
                     <Link to="/contact">contact page</Link> or shoot me an email
                     at{' '}
-                    <a href="mailto:henryheffernan@gmail.com">
-                        henryheffernan@gmail.com
+                    <a href="mailto:tariqasim96@gmail.com">
+                        tariqasim96@gmail.com
                     </a>
                 </p>
             </div>
