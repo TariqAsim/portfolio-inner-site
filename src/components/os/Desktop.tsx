@@ -57,7 +57,7 @@ const APPLICATIONS: {
     tariqle: {
         key: 'tariqle',
         name: 'Tariqle',
-        shortcutIcon: 'henordleIcon',
+        shortcutIcon: 'tariqleIcon',
         component: TariqleApp,
     },
     trail: {
