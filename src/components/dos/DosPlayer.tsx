@@ -19,12 +19,13 @@ export default function DosPlayer(props: PlayerProps) {
         }
 
         const root = rootRef.current as HTMLDivElement;
-        
+
         try {
             const instance = Dos(root);
             setDos(instance);
-            
-            const elements = rootRef.current.getElementsByClassName('flex-grow-0');
+
+            const elements =
+                rootRef.current.getElementsByClassName('flex-grow-0');
             while (elements.length > 0) {
                 elements[0].remove();
             }
@@ -52,7 +53,7 @@ export default function DosPlayer(props: PlayerProps) {
             }
         }
     }, [dos, props.bundleUrl]);
-    
+
     return (
         <div
             ref={rootRef}
