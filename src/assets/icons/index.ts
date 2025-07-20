@@ -17,6 +17,7 @@ import windowGameIcon from './windowGameIcon.png';
 import windowExplorerIcon from './windowExplorerIcon.png';
 import windowsStartIcon from './windowsStartIcon.png';
 import scrabbleIcon from './scrabbleIcon.png';
+import pacmanIcon from './pacmanIcon.png'
 import close from './close.png';
 
 const icons = {
@@ -32,6 +33,7 @@ const icons = {
     volumeOff: volumeOff,
     credits: credits,
     scrabbleIcon: scrabbleIcon,
+    pacmanIcon: pacmanIcon,
     henordleIcon: henordleIcon,
     close: close,
     windowGameIcon: windowGameIcon,

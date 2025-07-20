@@ -24,121 +24,43 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
             <ResumeDownload />
             <br />
             <div className="text-block">
-                <h2>henryheffernan.com</h2>
+                <h2>Taleemabad Offline-First EdTech Platform</h2>
                 <br />
                 <p>
-                    henryheffernan.com is my portfolio website, and also the
-                    website you are on right now. This project was an absolute
-                    joy to make and challenged me both technically and
-                    creatively. Early in 2022, I knew I wanted to make an
-                    interactive portfolio to aid my job search. I eventually got
-                    the idea for this site around early February and began
-                    development early March. I've been developing it alongside
-                    my last semester at school and if you are reading this, it's
-                    pretty much done!
+                    Architected and implemented key modules of an offline-first learning platform supporting web and mobile experiences. This project was a significant technical challenge that required innovative solutions for data synchronization and offline functionality.
                 </p>
                 <br />
                 <div className="captioned-image">
                     <VideoAsset src={computer} />
                     <p style={styles.caption}>
                         <sub>
-                            <b>Figure 1:</b> Blender Scene of the 3D website.
-                            The scene from Blender was baked and exported in a
-                            GLTF format.
+                            <b>Figure 1:</b> Offline-first EdTech platform demonstration showing data synchronization between local and server storage.
                         </sub>
                     </p>
                 </div>
                 <p>
-                    Now, a quick technical breakdown of the site. The website is
-                    split into two parts, the 3D site, and the 2D OS site. The
-                    3D site uses Three.js to render the scene and renders the 2D
-                    site inside of it using an iframe. The 2D OS site is a
-                    simple react site that is hosted{' '}
-                    <a
-                        rel="noreferrer"
-                        target="_blank"
-                        href="https://henryheffernan.vercel.app/"
-                    >
-                        here
-                    </a>{' '}
-                    and works as a standalone web app. The actual rendering of
-                    the 2D site is accomplished using a CSS renderer provided by
-                    Three.js that transforms the html of the 2D site with 3D CSS
-                    transforms to give the illusion of three dimensionality.
+                    The platform was built using React, Vite, DexieDB for offline storage, TypeScript, Material Design components, and Emotion CSS. I designed DexieDB schemas and sync algorithms to queue, batch, and resolve conflicts between local and server data, ensuring seamless user experience across millions of learning sessions.
                 </p>
                 <br />
-                <h3>Links:</h3>
-                <ul>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://henryheffernan.com"
-                        >
-                            <p>
-                                <b>[3D Site]</b> - henryheffernan.com
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://henryheffernan.vercel.app/"
-                        >
-                            <p>
-                                <b>[OS Site]</b> - henryheffernan.vercel.app
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://github.com/henryjeff/portfolio-website"
-                        >
-                            <p>
-                                <b>[GitHub]</b> - 3D Site Repository
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://github.com/henryjeff/portfolio-inner-site"
-                        >
-                            <p>
-                                <b>[GitHub]</b> - OS Site Repository
-                            </p>
-                        </a>
-                    </li>
-                </ul>
                 <p>
-                    I'm skipping over a lot of details in exchange for brevity,
-                    but I do plan on doing a more in depth breakdown for those
-                    interested sometime in the future. To get updates with that
-                    project feel free to follow me on twitter{' '}
-                    <a
-                        rel="noreferrer"
-                        target="_blank"
-                        href="https://twitter.com/henryheffernan"
-                    >
-                        @henryheffernan
-                    </a>
+                    Key technical achievements include implementing data synchronization logic with PostHog analytics, developing interactive course modules and quiz engines, and integrating mobile-specific capabilities via Capacitor and Cordova for hands-on activities and offline downloads.
                 </p>
+                <br />
+                <h3>Technologies Used:</h3>
+                <ul>
+                    <li>React, Vite, TypeScript</li>
+                    <li>DexieDB (offline storage)</li>
+                    <li>Material Design, Emotion CSS</li>
+                    <li>Capacitor, Cordova (mobile)</li>
+                    <li>PostHog Analytics</li>
+                    <li>Storybook (UI components)</li>
+                </ul>
             </div>
             <div className="text-block">
-                <h2>Guntattchment Saga The Sequel</h2>
+                <h2>ProdKit.AI — Frontend Team Lead</h2>
                 <br />
                 <p>
-                    Guntattchment Saga or GSTS is a game I made with my good
-                    friend Scott Bass back in 2019. The game is a wave based top
-                    down shooter where you progress by building the most
-                    outrageous of weapons through attaching as many attachments
-                    on your weapon as you can. The game ceased development in
-                    2019 because we unfortunately both had packed school
-                    schedules and were unable to find the time to work on it.
+                    Led frontend development of an AI platform for project estimation and tech stack recommendations. This project involved building a sophisticated AI-powered application that helps teams make informed decisions about project scope and technology choices.
                 </p>
                 <br />
                 <div className="captioned-image">
@@ -146,131 +68,83 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     <div style={styles.caption}>
                         <p>
                             <sub>
-                                <b>Figure 2: </b> Guntattchment Saga Gameplay
-                                demo, featuring the main character along with a
-                                few of our grunt and dasher enemies.
+                                <b>Figure 2: </b> ProdKit.AI platform interface showing AI-powered project estimation and tech stack recommendations.
                             </sub>
                         </p>
                     </div>
                 </div>
                 <p>
-                    Guntattchment Saga was a really fun project to work on and
-                    had a multitude of challenges. An interesting challenge that
-                    you may not even notice was the rotation of objects such as
-                    the players weapon. Rotating pixel art is a very difficult
-                    thing to do because in the world of pixels you are dealing
-                    with such a little amount of information. Even a single
-                    misplaced pixel can cause a sprite to read in a totally
-                    different and unintended way. To deal with this we developed
-                    an algorithm to prioritize outlines, while rotating the
-                    insides with a simple Nearest Neighbor algorithm. Doing so
-                    resulted in a relatively readable sprite when rotating
-                    sprites. It was a surprisingly difficult challenge as it
-                    intersected both art and programming, but was fun to work on
-                    overall.
+                    As the Frontend Team Lead, I was responsible for architecting the entire frontend system using Next.js, TypeScript, Firebase, and Tailwind CSS. The platform integrates with various AI services to provide intelligent project estimations and technology recommendations based on project requirements and constraints.
                 </p>
                 <br />
-                <h3>Links:</h3>
-                <ul>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://github.com/scottbass47/gsts"
-                        >
-                            <p>
-                                <b>[GitHub]</b> - Guntattchment Saga The Sequel
-                                Unity Repository
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://github.com/henryjeff/gsts_assets"
-                        >
-                            <p>
-                                <b>[GitHub]</b> - Guntattchment Saga The Sequel
-                                Assets Repository
-                            </p>
-                        </a>
-                    </li>
-                </ul>
                 <p>
-                    Unfortunately, the game currently is not in a releasable
-                    state and so there is no demo available online. If this ever
-                    changes, however, a link to the game will be added here.
+                    The project required deep understanding of AI integration, real-time data processing, and creating intuitive user interfaces for complex AI-driven features. I also implemented comprehensive testing strategies and documentation to ensure maintainability and scalability.
                 </p>
+                <br />
+                <h3>Technologies Used:</h3>
+                <ul>
+                    <li>Next.js, TypeScript</li>
+                    <li>Firebase (backend services)</li>
+                    <li>Tailwind CSS</li>
+                    <li>AI/ML Integration</li>
+                    <li>Real-time data processing</li>
+                </ul>
             </div>
             <div className="text-block">
-                <h2>Skip the Scroll</h2>
+                <h2>AI-based Healthcare Management System</h2>
                 <br />
                 <p>
-                    While working at Hover, I spent a lot of time on GitHub
-                    issue pages looking for answers and solutions to problems I
-                    had run into. I would always find myself sifting though the
-                    comments trying to find the right answer, which usually had
-                    the most upvotes and positive reactions. With that
-                    information, I decided to create a very simple chrome
-                    extension that would sift through all the comments on the
-                    page, sort them by positive reactions, and then allow you to
-                    traverse them from most positive reactions to least positive
-                    reactions.
+                    Spearheaded development of a comprehensive healthcare management web application with role-based dashboards, video calls, and real-time chat functionality. This project addressed critical needs in healthcare technology by providing secure, HIPAA-compliant communication and management tools.
                 </p>
                 <br />
                 <div className="captioned-image">
                     <VideoAsset src={scroll} />
                     <p style={styles.caption}>
                         <sub>
-                            <b>Figure 3:</b> Skip the Scroll in action, finding
-                            the highest rated comments and scrolling right to
-                            them
+                            <b>Figure 3:</b> Healthcare management system dashboard showing role-based interfaces and real-time communication features.
                         </sub>
                     </p>
                 </div>
                 <p>
-                    The extension is open source and currently released on the
-                    Chrome web store. Skip the Scroll is obviously not a project
-                    with massive scope, but was fun to make and dive into the
-                    world of browser extensions. I wanted to showcase since it's
-                    a developer tool and I wanna give it some visibility for
-                    those who might find it useful.
+                    The system features role-based dashboards for different healthcare professionals, secure video calling capabilities, and real-time chat functionality. I implemented Next.js and TypeScript for the frontend, integrated Firebase for backend services, and ensured all communications meet healthcare security standards.
                 </p>
                 <br />
-                <h3>Links:</h3>
-                <ul>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://github.com/henryjeff/skip-the-scroll"
-                        >
-                            <p>
-                                <b>[GitHub]</b> - Skip the Scroll Repository
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://chrome.google.com/webstore/detail/skip-the-scroll/mfehannpjmgfagldoilpngeoecdfgmnd"
-                        >
-                            <p>
-                                <b>[Chrome Web Store]</b> - Skip the Scroll
-                            </p>
-                        </a>
-                    </li>
-                </ul>
                 <p>
-                    If you are a developer and have also found yourself
-                    scrolling through github comment after github comment saying
-                    "i also have this problem...", then I highly recommend you
-                    check out Skip the Scroll to save you some of your precious
-                    time. If you like it, feel free to star it on GitHub and
-                    rate it on the Chrome web store.
+                    Key features include user authentication and authorization, real-time messaging, video conferencing integration, and comprehensive data management for healthcare providers. The system was designed with scalability and security as top priorities.
                 </p>
+                <br />
+                <h3>Technologies Used:</h3>
+                <ul>
+                    <li>Next.js, TypeScript</li>
+                    <li>Firebase (authentication & database)</li>
+                    <li>Real-time communication</li>
+                    <li>Video calling integration</li>
+                    <li>Role-based access control</li>
+                </ul>
+            </div>
+            <div className="text-block">
+                <h2>Ramped — AI Job Assistance Software</h2>
+                <br />
+                <p>
+                    Developed an AI-based job assistance software including a Chrome extension to help users optimize their job search and application process. The project combines web application development with browser extension technology to provide comprehensive job search assistance.
+                </p>
+                <br />
+                <p>
+                    The system includes intelligent resume analysis, job matching algorithms, and automated application tracking. The Chrome extension provides real-time assistance while browsing job sites, offering suggestions and automating repetitive tasks in the job search process.
+                </p>
+                <br />
+                <p>
+                    Key technical challenges included integrating AI services for resume parsing and job matching, developing a Chrome extension with proper permissions and security, and creating seamless integration between the web application and browser extension.
+                </p>
+                <br />
+                <h3>Technologies Used:</h3>
+                <ul>
+                    <li>Next.js, TypeScript</li>
+                    <li>Redux (state management)</li>
+                    <li>Chrome Extension API</li>
+                    <li>Python APIs (AI services)</li>
+                    <li>AI/ML Integration</li>
+                </ul>
             </div>
             <ResumeDownload />
         </div>

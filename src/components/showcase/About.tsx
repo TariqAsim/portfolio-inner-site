@@ -12,13 +12,14 @@ const About: React.FC<AboutProps> = (props) => {
         <div className="site-page-content">
             {/* <img src={me} style={styles.topImage} alt="" /> */}
             <h1 style={{ marginLeft: -16 }}>Welcome</h1>
-            <h3>I'm Henry Heffernan</h3>
+            <h3>I'm Tariq Asim</h3>
             <br />
             <div className="text-block">
                 <p>
-                    I'm a software engineer currently working at Vercel! In May
-                    of 2022 I graduated from Rensselaer Polytechnic Institute
-                    with my BS in Computer Science.
+                    I'm a Software Engineer with over three years of expertise
+                    in developing robust web and mobile applications using
+                    Next.js, React.js, and TypeScript. I graduated from
+                    FAST-NUCES with my BS in Computer Science in 2021.
                 </p>
                 <br />
                 <p>
@@ -27,8 +28,8 @@ const About: React.FC<AboutProps> = (props) => {
                     building it. If you have any questions or comments, feel
                     free to contact me using{' '}
                     <Link to="/contact">this form</Link> or shoot me an email at{' '}
-                    <a href="mailto:henryheffernan@gmail.com">
-                        henryheffernan@gmail.com
+                    <a href="mailto:tariqasim96@gmail.com">
+                        tariqasim96@gmail.com
                     </a>
                 </p>
             </div>
@@ -39,12 +40,10 @@ const About: React.FC<AboutProps> = (props) => {
                 <p>
                     From a young age, I have had a curiosity about how things
                     worked. This naturally led me to become absolutely obsessed
-                    with Lego and I fell in love with building things. In
-                    elementary school, I joined the Lego Robotics team at my
-                    local middle school, which was my first real exposure to
-                    programming. In 2008, my family and I moved across the
-                    country from California to New York, where I attended middle
-                    school, high school, and college.
+                    with technology and I fell in love with building things. My
+                    journey in software development began during my university
+                    years at FAST-NUCES, where I first started exploring web
+                    development and programming concepts.
                 </p>
                 <br />
                 <div className="captioned-image">
@@ -58,32 +57,36 @@ const About: React.FC<AboutProps> = (props) => {
                 </div>
 
                 <p>
-                    I started programming more seriously in high school,
-                    initially learning how to scrape and interact with websites.
-                    I went on to do a ton of passion projects, many of them with
-                    one of my closest friends,{' '}
-                    <a
-                        rel="noreferrer"
-                        target="_blank"
-                        href="https://www.linkedin.com/in/scott-bass-189a7919b/"
-                    >
-                        Scott Bass
-                    </a>
-                    . We worked on many projects together, including chat bots,
-                    multiple game projects, apps, and more. One of these
-                    projects is viewable on my{' '}
-                    <Link to="/projects/software">Software Projects</Link> page.
+                    I started programming more seriously during my university
+                    years, initially learning web development and working on
+                    various academic projects. I went on to do a ton of passion
+                    projects and gained experience in modern web technologies
+                    like React, Next.js, and TypeScript. My first professional
+                    experience came as a Teaching Assistant at FAST-NUCES, where
+                    I assisted professors with undergraduate computer science
+                    courses.
                 </p>
                 <br />
                 <p>
-                    In 2017, I got accepted into Rennselear Polytechnic
-                    Institute to study Computer Science. It was my first choice
-                    and I was absolutely ecstatic to be going to such a great
-                    university. At the end of my sophomore year, I got an
-                    internship working for the startup Hover, primarily focusing
-                    on frontend work. I continued to work at Hover on and off
-                    for about a year and a half, until the start of my senior
-                    year when I decided to focus on other opportunities.
+                    After graduating in 2021, I began my professional career as
+                    a Junior Web Developer at Askolay, where I assisted in the
+                    development of web-based educational tools. This experience
+                    laid the foundation for my interest in educational
+                    technology. I then moved to Silicon Solutions as a Software
+                    Engineer, where I developed and maintained various client
+                    websites and web applications, gaining valuable experience
+                    in client projects and diverse technology stacks.
+                </p>
+                <br />
+                <p>
+                    In 2023, I joined Vacon.ai as a Software Engineer, where I
+                    led the frontend development of an AI-powered platform that
+                    streamlines product development. I utilized Next.js,
+                    TypeScript, Firebase, and modern frontend technologies to
+                    build robust, scalable applications. Currently, I'm working
+                    at Taleemabad as a Frontend Developer, contributing to an
+                    offline-first EdTech platform that delivers both web and
+                    mobile experiences.
                 </p>
                 <br />
                 <br />
@@ -96,33 +99,50 @@ const About: React.FC<AboutProps> = (props) => {
                             flexDirection: 'column',
                         }}
                     >
-                        <h3>My Hobbies</h3>
+                        <h3>My Expertise</h3>
                         <br />
                         <p>
-                            Beyond software, I have a lot of hobbies that I
-                            enjoy doing in my free time. The more tangible
-                            hobbies I have are{' '}
-                            <Link to="/projects/music">Music Production</Link>{' '}
-                            and creating{' '}
-                            <Link to="/projects/art">Digital Art</Link>. You can
-                            read more about each of these on their respective
-                            pages under my projects tab. Some other hobbies I
-                            enjoy are working out, cooking, and (unsurprisingly)
-                            playing video games.
+                            I specialize in modern frontend development with
+                            expertise in React, Next.js, TypeScript, and various
+                            state management solutions. I have extensive
+                            experience with offline-first applications, mobile
+                            development using Capacitor and Cordova, and
+                            integrating complex APIs and third-party services.
+                            Some of my key technical skills include:
                         </p>
                         <br />
+                        <ul>
+                            <li>
+                                Frontend: React.js, Next.js, TypeScript, JavaScript
+                            </li>
+                            <li>
+                                Styling: Material Design, Tailwind CSS, Emotion
+                                CSS, Material UI, Bootstrap, Ant Design
+                            </li>
+                            <li>State Management: Redux, Context API</li>
+                            <li>
+                                Mobile & Offline: Capacitor, Cordova, DexieDB, PWA
+                            </li>
+                            <li>
+                                Backend & APIs: Firebase, REST APIs, NextAuth.js
+                            </li>
+                            <li>Testing: Storybook, RTL</li>
+                            <li>3D & Graphics: Three.js, WebGL</li>
+                        </ul>
+                        <br />
                         <p>
-                            In college, I was an active member in the fraternity
-                            Sigma Alpha Epsilon and held multiple positions in
-                            the chapter. I met a lot of amazing people through
-                            my fraternity and thoroughly enjoyed the community.
+                            Beyond software development, I enjoy working out,
+                            cooking, and playing video games. I'm passionate
+                            about creating user-centric applications and
+                            continuously learning new technologies to stay at
+                            the forefront of web development.
                         </p>
                     </div>
                     <div style={styles.verticalImage}>
                         <img src={meNow} style={styles.image} alt="" />
                         <p>
                             <sub>
-                                <b>Figure 2:</b> Me, April 2022
+                                <b>Figure 2:</b> Me, 2024
                             </sub>
                         </p>
                     </div>
@@ -137,9 +157,9 @@ const About: React.FC<AboutProps> = (props) => {
                     <a
                         rel="noreferrer"
                         target="_blank"
-                        href="https://twitter.com/henryheffernan"
+                        href="https://twitter.com/tariqasim"
                     >
-                        @henryheffernan
+                        @tariqasim
                     </a>{' '}
                     Good luck and have fun!
                 </p>
@@ -149,8 +169,8 @@ const About: React.FC<AboutProps> = (props) => {
                     them. You can reach me through the{' '}
                     <Link to="/contact">contact page</Link> or shoot me an email
                     at{' '}
-                    <a href="mailto:henryheffernan@gmail.com">
-                        henryheffernan@gmail.com
+                    <a href="mailto:tariqasim96@gmail.com">
+                        tariqasim96@gmail.com
                     </a>
                 </p>
             </div>
