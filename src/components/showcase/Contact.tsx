@@ -1,4 +1,5 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import colors from '../../constants/colors';
 import twitterIcon from '../../assets/pictures/contact-twitter.png';
 import ghIcon from '../../assets/pictures/contact-gh.png';
@@ -6,6 +7,21 @@ import inIcon from '../../assets/pictures/contact-in.png';
 import ResumeDownload from './ResumeDownload';
 
 export interface ContactProps {}
+
+const EMAILJS_CONFIG = {
+    SERVICE_ID: process.env.REACT_APP_EMAILJS_SERVICE_ID,
+    TEMPLATE_ID: process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+    PUBLIC_KEY: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
+};
+
+if (!EMAILJS_CONFIG.SERVICE_ID || !EMAILJS_CONFIG.TEMPLATE_ID || !EMAILJS_CONFIG.PUBLIC_KEY) {
+    throw new Error('Missing EmailJS environment variables. Please set REACT_APP_EMAILJS_SERVICE_ID, REACT_APP_EMAILJS_TEMPLATE_ID, and REACT_APP_EMAILJS_PUBLIC_KEY.');
+}
+
+// Typecast to string after runtime check
+const EMAILJS_SERVICE_ID = EMAILJS_CONFIG.SERVICE_ID as string;
+const EMAILJS_TEMPLATE_ID = EMAILJS_CONFIG.TEMPLATE_ID as string;
+const EMAILJS_PUBLIC_KEY = EMAILJS_CONFIG.PUBLIC_KEY as string;
 
 // function to validate email
 const validateEmail = (email: string) => {
@@ -54,31 +70,29 @@ const Contact: React.FC<ContactProps> = (props) => {
             setFormMessageColor('red');
             return;
         }
+
         try {
             setIsLoading(true);
-            const res = await fetch(
-                'https://api.tariqasim.com/api/contact',
-                {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        company,
-                        email,
-                        name,
-                        message,
-                    }),
-                }
+
+            // Prepare template parameters for EmailJS
+            const templateParams = {
+                from_name: name,
+                from_email: email,
+                company: company || 'Not specified',
+                message: message,
+                to_name: 'Tariq Asim',
+                reply_to: email,
+            };
+
+            // Send email using EmailJS
+            const result = await emailjs.send(
+                EMAILJS_SERVICE_ID,
+                EMAILJS_TEMPLATE_ID,
+                templateParams,
+                EMAILJS_PUBLIC_KEY
             );
-            // the response will be either {success: true} or {success: false, error: message}
-            const data = (await res.json()) as
-                | {
-                      success: false;
-                      error: string;
-                  }
-                | { success: true };
-            if (data.success) {
+
+            if (result.status === 200) {
                 setFormMessage(`Message successfully sent. Thank you ${name}!`);
                 setCompany('');
                 setEmail('');
@@ -87,11 +101,10 @@ const Contact: React.FC<ContactProps> = (props) => {
                 setFormMessageColor(colors.blue);
                 setIsLoading(false);
             } else {
-                setFormMessage(data.error);
-                setFormMessageColor(colors.red);
-                setIsLoading(false);
+                throw new Error('Failed to send email');
             }
-        } catch (e) {
+        } catch (error) {
+            console.error('EmailJS error:', error);
             setFormMessage(
                 'There was an error sending your message. Please try again.'
             );
@@ -181,7 +194,7 @@ const Contact: React.FC<ContactProps> = (props) => {
                     </label>
                     <input
                         style={styles.formItem}
-                        type="company"
+                        type="text"
                         name="company"
                         placeholder="Company"
                         value={company}
@@ -269,7 +282,6 @@ const styles: StyleSheetCSS = {
     },
     formInfo: {
         textAlign: 'right',
-
         flexDirection: 'column',
         alignItems: 'flex-end',
         paddingLeft: 24,
@@ -293,8 +305,6 @@ const styles: StyleSheetCSS = {
     social: {
         width: 4,
         height: 4,
-        // borderRadius: 1000,
-
         justifyContent: 'center',
         alignItems: 'center',
         marginLeft: 8,
