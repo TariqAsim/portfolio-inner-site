@@ -11,6 +11,7 @@ import Scrabble from '../applications/Scrabble';
 import { IconName } from '../../assets/icons';
 import Credits from '../applications/Credits';
 import TariqleApp from '../applications/Tariqle';
+import PacmanApp from '../applications/Pacman';
 
 export interface DesktopProps {}
 
@@ -36,12 +37,6 @@ const APPLICATIONS: {
         shortcutIcon: 'showcaseIcon',
         component: ShowcaseExplorer,
     },
-    trail: {
-        key: 'trail',
-        name: 'The Oregon Trail',
-        shortcutIcon: 'trailIcon',
-        component: OregonTrail,
-    },
     doom: {
         key: 'doom',
         name: 'Doom',
@@ -54,11 +49,23 @@ const APPLICATIONS: {
         shortcutIcon: 'scrabbleIcon',
         component: Scrabble,
     },
+    pacman: {
+        key: 'pacman',
+        name: 'Pacman',
+        shortcutIcon: 'pacmanIcon',
+        component: PacmanApp,
+    },
     tariqle: {
         key: 'tariqle',
         name: 'Tariqle',
         shortcutIcon: 'henordleIcon',
         component: TariqleApp,
+    },
+    trail: {
+        key: 'trail',
+        name: 'The Oregon Trail',
+        shortcutIcon: 'trailIcon',
+        component: OregonTrail,
     },
     credits: {
         key: 'credits',
