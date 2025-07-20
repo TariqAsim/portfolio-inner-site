@@ -1,10 +1,5 @@
 import React from 'react';
-// @ts-ignore
-import saga from '../../../assets/pictures/projects/software/saga.mp4';
-// @ts-ignore
-import scroll from '../../../assets/pictures/projects/software/scroll.mp4';
 import ResumeDownload from '../ResumeDownload';
-import VideoAsset from '../../general/VideoAsset';
 import tbd from '../../../assets/pictures/tbd.png';
 import ramped from '../../../assets/pictures/ramped.png';
 import zebramed from '../../../assets/pictures/zebramed.png';
