@@ -5,12 +5,12 @@ import Doom from '../applications/Doom';
 import OregonTrail from '../applications/OregonTrail';
 import ShutdownSequence from './ShutdownSequence';
 // import ThisComputer from '../applications/ThisComputer';
-import Henordle from '../applications/Henordle';
 import Toolbar from './Toolbar';
 import DesktopShortcut, { DesktopShortcutProps } from './DesktopShortcut';
 import Scrabble from '../applications/Scrabble';
 import { IconName } from '../../assets/icons';
 import Credits from '../applications/Credits';
+import TariqleApp from '../applications/Tariqle';
 
 export interface DesktopProps {}
 
@@ -54,11 +54,11 @@ const APPLICATIONS: {
         shortcutIcon: 'scrabbleIcon',
         component: Scrabble,
     },
-    henordle: {
-        key: 'henordle',
-        name: 'Henordle',
+    tariqle: {
+        key: 'tariqle',
+        name: 'Tariqle',
         shortcutIcon: 'henordleIcon',
-        component: Henordle,
+        component: TariqleApp,
     },
     credits: {
         key: 'credits',
