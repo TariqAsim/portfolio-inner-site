@@ -9,7 +9,6 @@ import Toolbar from './Toolbar';
 import DesktopShortcut, { DesktopShortcutProps } from './DesktopShortcut';
 import Scrabble from '../applications/Scrabble';
 import { IconName } from '../../assets/icons';
-import Credits from '../applications/Credits';
 import TariqleApp from '../applications/Tariqle';
 import PacmanApp from '../applications/Pacman';
 
@@ -66,12 +65,6 @@ const APPLICATIONS: {
         name: 'The Oregon Trail',
         shortcutIcon: 'trailIcon',
         component: OregonTrail,
-    },
-    credits: {
-        key: 'credits',
-        name: 'Credits',
-        shortcutIcon: 'credits',
-        component: Credits,
     },
 };
 
