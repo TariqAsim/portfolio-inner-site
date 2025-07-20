@@ -1,6 +1,6 @@
 import React from 'react';
-import me from '../../assets/pictures/workingAtComputer.jpg';
-import meNow from '../../assets/pictures/currentme.jpg';
+import me from '../../assets/pictures/bg-placeholder.jpg';
+import meNow from '../../assets/pictures/me-bg.png';
 import { Link } from 'react-router-dom';
 import ResumeDownload from './ResumeDownload';
 
@@ -142,7 +142,7 @@ const About: React.FC<AboutProps> = (props) => {
                         <img src={meNow} style={styles.image} alt="" />
                         <p>
                             <sub>
-                                <b>Figure 2:</b> Me, 2024
+                                <b>Figure 2:</b> Me, 2025
                             </sub>
                         </p>
                     </div>
