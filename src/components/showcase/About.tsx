@@ -113,7 +113,8 @@ const About: React.FC<AboutProps> = (props) => {
                         <br />
                         <ul>
                             <li>
-                                Frontend: React.js, Next.js, TypeScript, JavaScript
+                                Frontend: React.js, Next.js, TypeScript,
+                                JavaScript
                             </li>
                             <li>
                                 Styling: Material Design, Tailwind CSS, Emotion
@@ -121,7 +122,8 @@ const About: React.FC<AboutProps> = (props) => {
                             </li>
                             <li>State Management: Redux, Context API</li>
                             <li>
-                                Mobile & Offline: Capacitor, Cordova, DexieDB, PWA
+                                Mobile & Offline: Capacitor, Cordova, DexieDB,
+                                PWA
                             </li>
                             <li>
                                 Backend & APIs: Firebase, REST APIs, NextAuth.js
@@ -152,16 +154,7 @@ const About: React.FC<AboutProps> = (props) => {
                 <p>
                     Thanks for reading about me! I hope that you enjoy exploring
                     the rest of my portfolio website and everything it has to
-                    offer. If you find the easter egg make sure to let me know
-                    on twitter{' '}
-                    <a
-                        rel="noreferrer"
-                        target="_blank"
-                        href="https://twitter.com/tariqasim"
-                    >
-                        @tariqasim
-                    </a>{' '}
-                    Good luck and have fun!
+                    offer.
                 </p>
                 <br />
                 <p>
