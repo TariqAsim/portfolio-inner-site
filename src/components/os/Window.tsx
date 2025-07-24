@@ -22,6 +22,8 @@ export interface WindowProps {
     windowBarIcon?: IconName;
     onWidthChange?: (width: number) => void;
     onHeightChange?: (height: number) => void;
+    resizable?: boolean;
+    showMaximize?: boolean;
 }
 
 const Window: React.FC<WindowProps> = (props) => {
@@ -249,7 +251,9 @@ const Window: React.FC<WindowProps> = (props) => {
                                     icon="minimize"
                                     onClick={props.minimizeWindow}
                                 />
-                                <Button icon="maximize" onClick={maximize} />
+                                {props.showMaximize !== false && (
+                                    <Button icon="maximize" onClick={maximize} />
+                                )}
                                 <div style={{ paddingLeft: 2 }}>
                                     <Button
                                         icon="close"
@@ -269,16 +273,19 @@ const Window: React.FC<WindowProps> = (props) => {
                                 </div>
                             </div>
                         </div>
-                        <div
-                            onMouseDown={startResize}
-                            style={styles.resizeHitbox}
-                        ></div>
+                        {props.resizable !== false && (
+                            <div
+                                onMouseDown={startResize}
+                                style={styles.resizeHitbox}
+                            ></div>
+                        )}
                         <div style={styles.bottomBar}>
                             <div
-                                style={Object.assign({}, styles.insetBorder, {
-                                    flex: 5 / 7,
-                                    alignItems: 'center',
-                                })}
+                                style={Object.assign(
+                                    {},
+                                    styles.insetBorder,
+                                    { flex: 5 / 7, alignItems: 'center' }
+                                )}
                             >
                                 <p
                                     style={{
