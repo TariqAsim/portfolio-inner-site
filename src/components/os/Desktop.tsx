@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState, useRef } from 'react';
 import Colors from '../../constants/colors';
 import ShowcaseExplorer from '../applications/ShowcaseExplorer';
 import Doom from '../applications/Doom';
@@ -29,10 +29,10 @@ const Desktop: React.FC<DesktopProps> = (props) => {
     // Wallpaper state and options must be inside the component
     const [wallpaper, setWallpaper] = useState<string>('');
     const wallpaperOptions = [
-        { name: 'Windows 98', url: win98wp },
-        { name: 'Windows 98 (Alt 2)', url: win98wp3 },
-        { name: 'Windows 2000', url: win2000wp },
-        { name: 'Windows 2000 (Alt 2)', url: win20002 },
+        { name: 'Wallpaper 1', url: win98wp },
+        { name: 'Wallpaper 2', url: win98wp3 },
+        { name: 'Wallpaper 3', url: win2000wp },
+        { name: 'Wallpaper 4', url: win20002 },
     ];
     const APPLICATIONS: {
         [key in string]: {
@@ -109,6 +109,8 @@ const Desktop: React.FC<DesktopProps> = (props) => {
         x: number;
         y: number;
     }>({ visible: false, x: 0, y: 0 });
+    
+    const contextMenuRef = useRef<HTMLDivElement>(null);
 
     // Handle right-click on desktop
     const handleContextMenu = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -117,6 +119,22 @@ const Desktop: React.FC<DesktopProps> = (props) => {
         e.preventDefault();
         setContextMenu({ visible: true, x: e.clientX, y: e.clientY });
     };
+
+    // Handle clicking outside context menu to close it
+    useEffect(() => {
+        const handleClickOutside = (e: MouseEvent) => {
+            if (contextMenuRef.current && !contextMenuRef.current.contains(e.target as Node)) {
+                setContextMenu(prev => ({ ...prev, visible: false }));
+            }
+        };
+
+        if (contextMenu.visible) {
+            document.addEventListener('mousedown', handleClickOutside);
+            return () => {
+                document.removeEventListener('mousedown', handleClickOutside);
+            };
+        }
+    }, [contextMenu.visible]);
 
     useEffect(() => {
         if (shutdown === true) {
@@ -242,6 +260,7 @@ const Desktop: React.FC<DesktopProps> = (props) => {
             {/* Context Menu */}
             {contextMenu.visible && (
                 <div
+                    ref={contextMenuRef}
                     style={{
                         position: 'fixed',
                         top: contextMenu.y,
