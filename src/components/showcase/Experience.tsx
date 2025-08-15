@@ -29,33 +29,45 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             </div>
             <div className="text-block">
                 <p>
-                    Contributing to an offline-first EdTech platform, delivering both web and mobile experiences. Built using React, Vite, DexieDB (for offline storage), TypeScript, Material Design components, and Emotion CSS.
+                    Contributed to the development and feature enhancement of
+                    the Taleemabad EdTech Platform, an offline-first application
+                    for web and mobile.
                 </p>
                 <br />
                 <ul>
                     <li>
                         <p>
-                            Built the web application using React, Vite, DexieDB (for offline storage), TypeScript, Material Design components, Emotion CSS for styling, and Storybook for UI component development.
+                            Contributed to an offline-first EdTech platform,
+                            delivering both web and mobile experiences using
+                            React, Vite, DexieDB, TypeScript, Material Design
+                            components, and Emotion CSS.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Implemented data synchronization logic with PostHog analytics to seamlessly handle online/offline transitions, ensuring consistent user experience and data integrity across millions of learning sessions.
+                            Assisted in maintaining the cross-platform mobile
+                            version built with Capacitor and Cordova.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Collaborated with backend and mobile teams to design RESTful APIs and define data models.
+                            Enhanced data synchronization logic using React,
+                            TypeScript, and DexieDB to deliver a seamless user
+                            experience in low-connectivity environments.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Converted the web app into a cross-platform mobile application using Capacitor and Cordova, integrating device features (camera, notifications, file storage) for offline use.
+                            Integrated PostHog analytics for comprehensive user
+                            behavior tracking and performance monitoring across
+                            millions of learning sessions.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Wrote comprehensive unit and integration tests, and documented UI components in Storybook to accelerate feature development and onboarding.
+                            Documented UI components in Storybook and assisted
+                            with the mobile version built with Capacitor and
+                            Cordova.
                         </p>
                     </li>
                 </ul>
@@ -82,33 +94,44 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             </div>
             <div className="text-block">
                 <p>
-                    Led the frontend development of an AI-powered platform that streamlines product development. Utilized Next.js, TypeScript, Firebase, Mixpanel, NextAuth, Axios, and Tailwind CSS.
+                    Led the frontend development for multiple AI-powered
+                    platforms, including ProdKit.AI and an AI-based Healthcare
+                    Management System.
                 </p>
                 <br />
                 <ul>
                     <li>
                         <p>
-                            Developed and maintained the frontend architecture using Next.js and TypeScript, ensuring type safety and optimal performance.
+                            Developed an AI job assistance software (Ramped) and
+                            its accompanying Chrome extension using Next.js,
+                            TypeScript, and Redux.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Integrated Firebase for backend services and user authentication, implementing NextAuth for secure authentication flows.
+                            Utilized Next.js, TypeScript, Firebase, and Tailwind
+                            CSS to build responsive, high-performance user
+                            interfaces.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Utilized Mixpanel for analytics and user behavior tracking to improve product decisions and user experience.
+                            Integrated GitHub for seamless workflow and
+                            collaborated with a Python FastAPI backend team.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Integrated GitHub for seamless workflow and collaborated with a Python FastAPI backend team.
+                            Implemented secure authentication with NextAuth.js,
+                            integrated Stripe for payments, and configured
+                            analytics with Mixpanel and Google Analytics.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Implemented responsive design using Tailwind CSS and ensured cross-browser compatibility.
+                            Collaborated with backend engineers to integrate
+                            REST APIs and delivered a responsive,
+                            high-performance UI across devices.
                         </p>
                     </li>
                 </ul>
@@ -135,28 +158,36 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             </div>
             <div className="text-block">
                 <p>
-                    Developed and maintained various client websites and web applications, working with diverse technology stacks and client requirements.
+                    Developed the user interface for TextPilot, a POS business
+                    solution, using React.js to manage customer communications.
                 </p>
                 <br />
                 <ul>
                     <li>
                         <p>
-                            Built responsive web applications using modern frontend technologies including React, JavaScript, and CSS frameworks.
+                            Developed the UI for a POS business solution to
+                            manage customer communication across multiple
+                            platforms using Twilio.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Collaborated with clients to understand requirements and deliver custom solutions that met their business needs.
+                            Created an animated and responsive 3D Portfolio
+                            Website using Three.js and WebGL.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Maintained and optimized existing client websites to improve performance and user experience.
+                            Built a full-stack Book Tracker App with separate
+                            admin/user dashboards and a modern Company Portfolio
+                            Website.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Worked with various backend technologies and APIs to create full-stack solutions.
+                            Built a book tracking web application featuring
+                            separate admin and user dashboards using React.js,
+                            HTML, and CSS with authenticated API calls.
                         </p>
                     </li>
                 </ul>
@@ -183,28 +214,34 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             </div>
             <div className="text-block">
                 <p>
-                    Assisted in the development of web-based educational tools, gaining foundational experience in educational technology and web development.
+                    Assisted in the development and maintenance of various
+                    web-based tools and websites for clients, gaining
+                    foundational experience in web development.
                 </p>
                 <br />
                 <ul>
                     <li>
                         <p>
-                            Contributed to the development of educational web applications using HTML, CSS, and JavaScript.
+                            Contributed to the development of web applications
+                            using HTML, CSS, and JavaScript.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Assisted in creating interactive learning modules and educational content management systems.
+                            Assisted in creating interactive web modules and
+                            content management systems.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Collaborated with senior developers to learn best practices in web development and educational technology.
+                            Gained foundational experience in frontend
+                            development practices and team collaboration.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Participated in code reviews and testing to ensure quality and functionality of educational tools.
+                            Assisted in the development and maintenance of
+                            various web-based tools and websites for clients.
                         </p>
                     </li>
                 </ul>
@@ -231,28 +268,39 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             </div>
             <div className="text-block">
                 <p>
-                    Assisted professors with undergraduate computer science courses, specifically focusing on e-commerce subject with theoretical concepts and web/app-based projects.
+                    Assisted professors with undergraduate computer science
+                    courses, specifically focusing on E-Commerce course with
+                    theoretical concepts and web/app-based projects.
                 </p>
                 <br />
                 <ul>
                     <li>
                         <p>
-                            Assisted in teaching undergraduate e-commerce courses, helping students with theoretical concepts and web/app-based projects.
+                            Assisted in teaching undergraduate E-Commerce
+                            course, helping students with theoretical concepts
+                            and web/app-based projects.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Provided guidance on e-commerce principles, digital business models, and web application development for e-commerce platforms.
+                            Provided guidance on e-commerce principles, digital
+                            business models, and web application development for
+                            e-commerce platforms.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Graded assignments and provided constructive feedback to help students improve their understanding of e-commerce concepts and web development skills.
+                            Graded assignments and provided constructive
+                            feedback to help students improve their
+                            understanding of e-commerce concepts and web
+                            development skills.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Collaborated with professors to develop course materials and improve teaching methodologies for e-commerce education.
+                            Collaborated with professors to develop course
+                            materials and improve teaching methodologies for
+                            e-commerce education.
                         </p>
                     </li>
                 </ul>

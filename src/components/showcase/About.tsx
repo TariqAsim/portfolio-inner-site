@@ -61,32 +61,33 @@ const About: React.FC<AboutProps> = (props) => {
                     years, initially learning web development and working on
                     various academic projects. I went on to do a ton of passion
                     projects and gained experience in modern web technologies
-                    like React, Next.js, and TypeScript. My first professional
-                    experience came as a Teaching Assistant at FAST-NUCES, where
-                    I assisted professors with undergraduate computer science
-                    courses.
+                    like React, Next.js, and TypeScript. During my final
+                    semester, I briefly worked as a Teaching Assistant for an
+                    E-Commerce course at FAST-NUCES, helping students with
+                    theoretical concepts and web-based projects.
                 </p>
                 <br />
                 <p>
                     After graduating in 2021, I began my professional career as
                     a Junior Web Developer at Askolay, where I assisted in the
-                    development of web-based educational tools. This experience
-                    laid the foundation for my interest in educational
-                    technology. I then moved to Silicon Solutions as a Software
-                    Engineer, where I developed and maintained various client
-                    websites and web applications, gaining valuable experience
-                    in client projects and diverse technology stacks.
+                    development of various web-based tools and websites for
+                    clients, gaining foundational experience in web development.
+                    I then moved to Silicon Solutions as a Software Engineer,
+                    where I developed user interfaces for business solutions,
+                    created 3D websites using Three.js and WebGL, and built
+                    full-stack applications with separate admin and user
+                    dashboards.
                 </p>
                 <br />
                 <p>
                     In 2023, I joined Vacon.ai as a Software Engineer, where I
-                    led the frontend development of an AI-powered platform that
-                    streamlines product development. I utilized Next.js,
-                    TypeScript, Firebase, and modern frontend technologies to
-                    build robust, scalable applications. Currently, I'm working
-                    at Taleemabad as a Frontend Developer, contributing to an
-                    offline-first EdTech platform that delivers both web and
-                    mobile experiences.
+                    led the frontend development for multiple AI-powered
+                    platforms and developed various AI applications including
+                    Chrome extensions using Next.js, TypeScript, and Redux.
+                    Currently, I'm working at Taleemabad as a Frontend
+                    Developer, contributing to the development and feature
+                    enhancement of an offline-first EdTech platform for web and
+                    mobile.
                 </p>
                 <br />
                 <br />
@@ -106,15 +107,16 @@ const About: React.FC<AboutProps> = (props) => {
                             expertise in React, Next.js, TypeScript, and various
                             state management solutions. I have extensive
                             experience with offline-first applications, mobile
-                            development using Capacitor and Cordova, and
-                            integrating complex APIs and third-party services.
-                            Some of my key technical skills include:
+                            development using Capacitor and Cordova, AI-powered
+                            platforms, and integrating complex APIs and
+                            third-party services. Some of my key technical
+                            skills include:
                         </p>
                         <br />
                         <ul>
                             <li>
-                                Frontend: React.js, Next.js, TypeScript,
-                                JavaScript
+                                Languages & Frameworks: React.js, Next.js,
+                                TypeScript, JavaScript
                             </li>
                             <li>
                                 Styling: Material Design, Tailwind CSS, Emotion
@@ -126,15 +128,23 @@ const About: React.FC<AboutProps> = (props) => {
                                 PWA
                             </li>
                             <li>
-                                Backend & APIs: Firebase, REST APIs, NextAuth.js
+                                Backend & APIs: Firebase, REST APIs,
+                                NextAuth.js, Stripe
                             </li>
-                            <li>Testing: Storybook, RTL</li>
+                            <li>Testing & Tooling: Storybook, Git, Github </li>
+                            <li>
+                                Analytics: PostHog, Mixpanel, Google Analytics
+                            </li>
+                            <li>
+                                Build Tools: Vite, Webpack, Vercel, Turbopack
+                            </li>
                             <li>3D & Graphics: Three.js, WebGL</li>
                         </ul>
                         <br />
                         <p>
-                            Beyond software development, I enjoy working out,
-                            cooking, and playing video games. I'm passionate
+                            Beyond software development, I enjoy playing video
+                            games, binge-watching movies and TV shows, swimming,
+                            and occasionally playing cricket. I'm passionate
                             about creating user-centric applications and
                             continuously learning new technologies to stay at
                             the forefront of web development.

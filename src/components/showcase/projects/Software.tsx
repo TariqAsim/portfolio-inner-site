@@ -21,14 +21,14 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
             <ResumeDownload />
             <br />
             <div className="text-block">
-                <h2>Taleemabad Offline-First EdTech Platform</h2>
+                <h2>Taleemabad EdTech Platform</h2>
                 <br />
                 <p>
-                    Architected and implemented key modules of an offline-first
-                    learning platform supporting web and mobile experiences.
-                    This project was a significant technical challenge that
-                    required innovative solutions for data synchronization and
-                    offline functionality.
+                    Contributed to the development and feature enhancement of an
+                    offline-first EdTech platform, delivering both web and
+                    mobile experiences. This project focused on improving data
+                    synchronization logic to ensure seamless user experience in
+                    low-connectivity environments.
                 </p>
                 <br />
                 <div className="captioned-image">
@@ -44,18 +44,17 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 <p>
                     The platform was built using React, Vite, DexieDB for
                     offline storage, TypeScript, Material Design components, and
-                    Emotion CSS. I designed DexieDB schemas and sync algorithms
-                    to queue, batch, and resolve conflicts between local and
-                    server data, ensuring seamless user experience across
-                    millions of learning sessions.
+                    Emotion CSS. I enhanced data synchronization logic using
+                    React, TypeScript, and DexieDB to deliver a seamless user
+                    experience in low-connectivity environments.
                 </p>
                 <br />
                 <p>
-                    Key technical achievements include implementing data
-                    synchronization logic with PostHog analytics, developing
-                    interactive course modules and quiz engines, and integrating
-                    mobile-specific capabilities via Capacitor and Cordova for
-                    hands-on activities and offline downloads.
+                    Key technical achievements include integrating PostHog
+                    analytics for comprehensive user behavior tracking and
+                    performance monitoring across millions of learning sessions,
+                    documenting UI components in Storybook, and assisting with
+                    the mobile version built with Capacitor and Cordova.
                 </p>
                 <br />
                 <h3>Technologies Used:</h3>
@@ -69,14 +68,14 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 </ul>
             </div>
             <div className="text-block">
-                <h2>ProdKit.AI — Frontend Team Lead</h2>
+                <h2>Ramped — AI Job Assistance Software</h2>
                 <br />
                 <p>
-                    Led frontend development of an AI platform for project
-                    estimation and tech stack recommendations. This project
-                    involved building a sophisticated AI-powered application
-                    that helps teams make informed decisions about project scope
-                    and technology choices.
+                    Developed an AI-based job assistance software including a
+                    Chrome extension to help users optimize their job search and
+                    application process. The project combines web application
+                    development with browser extension technology to provide
+                    comprehensive job search assistance.
                 </p>
                 <br />
                 <div className="captioned-image">
@@ -84,37 +83,87 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     <div style={styles.caption}>
                         <p>
                             <sub>
-                                <b>Figure 2: </b> ProdKit.AI platform interface
-                                showing AI-powered project estimation and tech
-                                stack recommendations.
+                                <b>Figure 2: </b> Ramped AI job assistance
+                                platform interface showing resume builder and
+                                job matching features.
                             </sub>
                         </p>
                     </div>
                 </div>
                 <p>
-                    As the Frontend Team Lead, I was responsible for
-                    architecting the entire frontend system using Next.js,
-                    TypeScript, Firebase, and Tailwind CSS. The platform
-                    integrates with various AI services to provide intelligent
-                    project estimations and technology recommendations based on
-                    project requirements and constraints.
+                    The system includes intelligent resume analysis, job
+                    matching algorithms, and automated application tracking. I
+                    utilized Next.js, TypeScript, Firebase, and Tailwind CSS to
+                    build responsive, high-performance user interfaces with
+                    secure authentication using NextAuth.js.
                 </p>
                 <br />
                 <p>
-                    The project required deep understanding of AI integration,
-                    real-time data processing, and creating intuitive user
-                    interfaces for complex AI-driven features. I also
-                    implemented comprehensive testing strategies and
-                    documentation to ensure maintainability and scalability.
+                    Key technical achievements include implementing secure
+                    authentication with NextAuth.js, integrating Stripe for
+                    payments, configuring analytics with Mixpanel and Google
+                    Analytics, and collaborating with backend engineers to
+                    integrate REST APIs for a responsive, high-performance UI
+                    across devices.
+                </p>
+                <br />
+                <h3>Technologies Used:</h3>
+                <ul>
+                    <li>Next.js, TypeScript, Redux</li>
+                    <li>Firebase, NextAuth.js, Stripe</li>
+                    <li>Tailwind CSS, Material UI</li>
+                    <li>Mixpanel, Google Analytics</li>
+                    <li>Chrome Extension</li>
+                </ul>
+            </div>
+            <div className="text-block">
+                <h2>ProdKit.AI — Frontend Team Lead</h2>
+                <br />
+                <p>
+                    Led frontend development of an AI platform featuring a code
+                    explainer with GitHub integration, project estimation, and
+                    tech stack recommendations. This project involved building a
+                    sophisticated AI-powered application that helps developers
+                    understand codebases and teams make informed decisions about
+                    project scope and technology choices.
+                </p>
+                <br />
+                <div className="captioned-image">
+                    <img src={zebramed} style={styles.image} alt="" />
+                    <p style={styles.caption}>
+                        <sub>
+                            <b>Figure 3:</b> ProdKit.AI platform interface
+                            showing AI-powered code explanation with GitHub
+                            integration and project estimation features.
+                        </sub>
+                    </p>
+                </div>
+                <p>
+                    As the Frontend Team Lead, I was responsible for
+                    architecting the entire frontend system using Next.js,
+                    TypeScript, Firebase, and Tailwind CSS. The platform's major
+                    feature was an AI-powered code explainer that integrates
+                    with GitHub repositories to analyze and explain code
+                    structures, functions, and logic in natural language.
+                </p>
+                <br />
+                <p>
+                    The project required deep understanding of GitHub API
+                    integration, AI integration for code analysis, real-time
+                    data processing, and creating intuitive user interfaces for
+                    complex AI-driven features. I also implemented comprehensive
+                    testing strategies and documentation to ensure
+                    maintainability and scalability.
                 </p>
                 <br />
                 <h3>Technologies Used:</h3>
                 <ul>
                     <li>Next.js, TypeScript</li>
-                    <li>Firebase (backend services)</li>
+                    <li>Firebase, NextAuth.js</li>
                     <li>Tailwind CSS</li>
                     <li>AI/ML Integration</li>
                     <li>Real-time data processing</li>
+                    <li>GitHub Integration</li>
                 </ul>
             </div>
             <div className="text-block">
@@ -130,10 +179,10 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 </p>
                 <br />
                 <div className="captioned-image">
-                    <img src={zebramed} style={styles.image} alt="" />
+                    <img src={rampedext} style={styles.image} alt="" />
                     <p style={styles.caption}>
                         <sub>
-                            <b>Figure 3:</b> Healthcare management system
+                            <b>Figure 4:</b> Healthcare management system
                             dashboard showing role-based interfaces and
                             real-time communication features.
                         </sub>
@@ -159,56 +208,11 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 <h3>Technologies Used:</h3>
                 <ul>
                     <li>Next.js, TypeScript</li>
-                    <li>Firebase (authentication & database)</li>
-                    <li>Real-time communication</li>
+                    <li>Firebase, NextAuth.js (authentication & database)</li>
+                    <li>Real-time chat</li>
+                    <li>AI-based reports and analytics</li>
                     <li>Video calling integration</li>
                     <li>Role-based access control</li>
-                </ul>
-            </div>
-            <div className="text-block">
-                <h2>Ramped — AI Job Assistance Software</h2>
-                <br />
-                <p>
-                    Developed an AI-based job assistance software including a
-                    Chrome extension to help users optimize their job search and
-                    application process. The project combines web application
-                    development with browser extension technology to provide
-                    comprehensive job search assistance.
-                </p>
-                <br />
-                <div className="captioned-image">
-                    <img src={rampedext} style={styles.image} alt="" />
-                    <p style={styles.caption}>
-                        <sub>
-                            <b>Figure 4:</b> Ramped's AI-based browser extension
-                            automatically autofilling job application forms to
-                            streamline and accelerate the job search process.
-                        </sub>
-                    </p>
-                </div>
-                <p>
-                    The system includes intelligent resume analysis, job
-                    matching algorithms, and automated application tracking. The
-                    Chrome extension provides real-time assistance while
-                    browsing job sites, offering suggestions and automating
-                    repetitive tasks in the job search process.
-                </p>
-                <br />
-                <p>
-                    Key technical challenges included integrating AI services
-                    for resume parsing and job matching, developing a Chrome
-                    extension with proper permissions and security, and creating
-                    seamless integration between the web application and browser
-                    extension.
-                </p>
-                <br />
-                <h3>Technologies Used:</h3>
-                <ul>
-                    <li>Next.js, TypeScript</li>
-                    <li>Redux (state management)</li>
-                    <li>Chrome Extension API</li>
-                    <li>Python APIs (AI services)</li>
-                    <li>AI/ML Integration</li>
                 </ul>
             </div>
             <ResumeDownload />
