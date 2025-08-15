@@ -134,7 +134,7 @@ const About: React.FC<AboutProps> = (props) => {
                         <br />
                         <p>
                             Beyond software development, I enjoy working out,
-                            cooking, and playing video games. I'm passionate
+                            swimming, and playing video games. I'm passionate
                             about creating user-centric applications and
                             continuously learning new technologies to stay at
                             the forefront of web development.
