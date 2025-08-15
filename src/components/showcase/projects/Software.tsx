@@ -110,21 +110,22 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 <h3>Technologies Used:</h3>
                 <ul>
                     <li>Next.js, TypeScript, Redux</li>
-                    <li>Firebase (backend services)</li>
-                    <li>Tailwind CSS</li>
-                    <li>NextAuth.js, Stripe</li>
+                    <li>Firebase, NextAuth.js, Stripe</li>
+                    <li>Tailwind CSS, Material UI</li>
                     <li>Mixpanel, Google Analytics</li>
+                    <li>Chrome Extension</li>
                 </ul>
             </div>
             <div className="text-block">
                 <h2>ProdKit.AI — Frontend Team Lead</h2>
                 <br />
                 <p>
-                    Led frontend development of an AI platform for project
-                    estimation and tech stack recommendations. This project
-                    involved building a sophisticated AI-powered application
-                    that helps teams make informed decisions about project scope
-                    and technology choices.
+                    Led frontend development of an AI platform featuring a code
+                    explainer with GitHub integration, project estimation, and
+                    tech stack recommendations. This project involved building a
+                    sophisticated AI-powered application that helps developers
+                    understand codebases and teams make informed decisions about
+                    project scope and technology choices.
                 </p>
                 <br />
                 <div className="captioned-image">
@@ -132,35 +133,37 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     <p style={styles.caption}>
                         <sub>
                             <b>Figure 3:</b> ProdKit.AI platform interface
-                            showing AI-powered project estimation and tech stack
-                            recommendations.
+                            showing AI-powered code explanation with GitHub
+                            integration and project estimation features.
                         </sub>
                     </p>
                 </div>
                 <p>
                     As the Frontend Team Lead, I was responsible for
                     architecting the entire frontend system using Next.js,
-                    TypeScript, Firebase, and Tailwind CSS. The platform
-                    integrates with various AI services to provide intelligent
-                    project estimations and technology recommendations based on
-                    project requirements and constraints.
+                    TypeScript, Firebase, and Tailwind CSS. The platform's major
+                    feature was an AI-powered code explainer that integrates
+                    with GitHub repositories to analyze and explain code
+                    structures, functions, and logic in natural language.
                 </p>
                 <br />
                 <p>
-                    The project required deep understanding of AI integration,
-                    real-time data processing, and creating intuitive user
-                    interfaces for complex AI-driven features. I also
-                    implemented comprehensive testing strategies and
-                    documentation to ensure maintainability and scalability.
+                    The project required deep understanding of GitHub API
+                    integration, AI integration for code analysis, real-time
+                    data processing, and creating intuitive user interfaces for
+                    complex AI-driven features. I also implemented comprehensive
+                    testing strategies and documentation to ensure
+                    maintainability and scalability.
                 </p>
                 <br />
                 <h3>Technologies Used:</h3>
                 <ul>
                     <li>Next.js, TypeScript</li>
-                    <li>Firebase (backend services)</li>
+                    <li>Firebase, NextAuth.js</li>
                     <li>Tailwind CSS</li>
                     <li>AI/ML Integration</li>
                     <li>Real-time data processing</li>
+                    <li>GitHub Integration</li>
                 </ul>
             </div>
             <div className="text-block">
@@ -205,8 +208,9 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 <h3>Technologies Used:</h3>
                 <ul>
                     <li>Next.js, TypeScript</li>
-                    <li>Firebase (authentication & database)</li>
-                    <li>Real-time communication</li>
+                    <li>Firebase, NextAuth.js (authentication & database)</li>
+                    <li>Real-time chat</li>
+                    <li>AI-based reports and analytics</li>
                     <li>Video calling integration</li>
                     <li>Role-based access control</li>
                 </ul>
